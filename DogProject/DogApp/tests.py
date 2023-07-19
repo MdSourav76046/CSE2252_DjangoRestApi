@@ -20,14 +20,14 @@ class post_dogShop_test(APITestCase):
         response = self.client.post(self.cat_url, self.cat_data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-# class get_cat_list(APITestCase):
-#     def setUp(self):
-#         self.cat_url = reverse('product_view')
-#         return super().setUp()
+class get_dogShop_list(APITestCase):
+    def setUp(self):
+        self.cat_url = reverse('dog_shop_list')
+        return super().setUp()
 
-#     def test_can_get_cat(self):
-#         response = self.client.get(self.cat_url)
-#         self.assertEqual(response.status_code, status.HTTP_200_OK)
+    def test_can_get_cat(self):
+        response = self.client.get(self.cat_url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 # class get_cat_detail(APITestCase):
 #     def setUp(self):
