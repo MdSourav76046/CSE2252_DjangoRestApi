@@ -4,7 +4,7 @@ from .models import DogShop
 from .serializers import DogShopSerializer
 
 
-class DogShopShopDetail(generics.RetrieveUpdateDestroyAPIView):
+class DogShopDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = DogShop.objects.all()
     serializer_class = DogShopSerializer
 

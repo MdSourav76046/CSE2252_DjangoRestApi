@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from .views import D
+from .views import Do
 urlpatterns = [
     path('admin/',),
 ]
