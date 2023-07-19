@@ -45,7 +45,7 @@ class get_dogShop_detail(APITestCase):
     def test_can_get_dogShop(self):
         response = self.client.get(self.dogShop_url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-
+        
 
 class put_dogShop_test(APITestCase):
     def setUp(self):
